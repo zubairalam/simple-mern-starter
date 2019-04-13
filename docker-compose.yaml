@@ -1,0 +1,11 @@
+version: "3"
+services:
+  mongo:
+    image: mongo
+    restart: always
+    container_name: bestsales_mongo
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: bestsales 
+      MONGO_INITDB_ROOT_PASSWORD: bestsales 
+    ports:
+      - 27017:27017 
